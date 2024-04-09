@@ -21,3 +21,4 @@ Suggestions:
 7. Logical: AVOID queries or fetching from DB inside a loop. to much memory to be use and not a good practice.
 8. Always have a checking before loops if there is a value.
 9. Better to have a unit test, this may help to avoid errors before being deployed. Less turnover time from QA means less time needed for the cod to be deployed.
+10. Database related: Better to have "deleted_at": Null if not deleted and insert date time when was the record deleted if the record is going to be deleted. (soft delete, safe for record keeping)
